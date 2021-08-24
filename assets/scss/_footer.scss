@@ -1,0 +1,98 @@
+footer {
+        background-color: $black;
+}
+
+.area-footer {
+        color: $white;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+        padding: 50px 0px;
+        font-family: 'Alata', sans-serif;
+}
+
+.footer-logo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                text-align: center;
+        }
+}
+
+.footer-menu {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                text-align: center;
+                margin: 30px 0px;
+        }
+}
+
+        .footer-menu ul li {
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 20px;
+                height: 30px;
+                cursor: pointer;
+                &:hover {
+                        border-bottom: 3px solid $white;
+                }
+                @media screen and (max-width: 768px) {
+                        display: block;
+                        &:hover {
+                                border-bottom: unset;
+                        }
+                }
+        }
+
+.footer-social {
+        text-align: right;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                grid-row: 3 / 4;
+                text-align: center;
+        }
+}
+
+.footer-social img {
+        width: 24px;
+        height: auto;
+        margin-left: 10px;
+        cursor: pointer;
+}
+
+.footer-copyright {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        color: $dark-gray;
+        text-align: right;
+        @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                grid-row: 4 / 5;
+                text-align: center;
+        }
+}
+
+.footer-attribution {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4 ;
+        text-align: center;
+        font-size: 12px;
+        color: $dark-gray;
+        @media screen and (max-width: 768px) {
+                grid-column: 1 / 3;
+                grid-row: 5 / 6;
+        }
+}
+
+        .footer-attribution a {
+                text-decoration: none;
+                color: $dark-gray;
+                &:hover {
+                        color: $white;
+                }
+        }

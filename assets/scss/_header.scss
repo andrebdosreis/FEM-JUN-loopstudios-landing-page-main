@@ -1,0 +1,94 @@
+header {
+        height: 650px;
+        background-image: url(../../images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        font-family: 'Alata', sans-serif;
+        @media screen and (max-width: 768px) {
+                background-image: url(../../images/mobile/image-hero.jpg);
+        }
+}
+
+.header-area-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100px;
+}
+
+.header-menu {
+        @media screen and (max-width: 768px) {
+                display: none;
+                position: fixed;
+                z-index: 10;
+                background-color: rgba($color: #000000, $alpha: .95);
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                padding-top: 170px;
+        }
+}
+
+.header-menu ul li {
+        list-style-type: none;
+        display: inline-block;
+        height: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+        &:hover {
+                border-bottom: 3px solid $white;
+        }
+        @media screen and (max-width: 768px) {
+                display: block;
+                font-family: 'Josefin Sans', sans-serif;
+                text-transform: uppercase;
+                font-size: 24px;
+                margin-bottom: 20px;
+                width: 40px;
+        }
+}
+
+.header-menu-mob {
+        height: 30px;
+        cursor: pointer;
+        display: none;
+        @media screen and (max-width: 768px) {
+                display: block;
+        }
+}
+
+.show-menu {
+        display: block;
+}
+
+
+.header-area-banner {
+        height: calc(100% - 100px);
+        display: flex;
+}
+
+.banner {
+        height: 100%;
+        max-width: 650px;
+        display: flex;
+        align-items: center;
+}
+
+h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 72px;
+        padding: 35px;
+        border: 2px solid $white;
+        font-weight: normal;
+        @media screen and (max-width: 768px) {
+                font-size: 54px;
+                padding: 20px;
+        }
+        @media screen and (max-width: 425px) {
+                font-size: 36px;
+                padding: 10px;
+        }
+}
